@@ -32,25 +32,46 @@ body::before {
 
 /*Inicio*/
 
+.principal {
+    grid-area: main;
+}
+
+.principal .hero {
+    color: rgb(15, 15, 15);
+    width: 100%;
+    height: calc(100vh - 104px);
+    background: linear-gradient(rgba(233, 233, 190, 0.445), rgba(255, 255, 255, 0.151)), url(../imagenes/ventana.png);
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal .hero h1 {
+    font-size: 60px;
+    padding: 30px;
+}
+
+.principal .hero h2 {
+    font-size: 40px;
+    padding: 30px;
+}
+
+.principal .hero p {
+    font-size: 35px;
+    text-align: center;
+}
+
 #texto1 {
     padding-top: 2em;
     font-size: 1.4em;
     text-align: center;
 }
-
-
-#texto2 {
-    padding: auto;
-    margin: auto;
-    color: white;
-    font-size: 1.4em;
-    text-align: center;
-    font-style: italic;
-    font-weight: 200;
-    width: 80%;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
 
 #inicio {
     padding-top: 6em;
@@ -63,7 +84,6 @@ body::before {
 #datos {
     font-family: "Montserrat", sans-serif;
 }
-
 
 .form-label {
     align-items: center;
@@ -108,15 +128,12 @@ body::before {
     padding-top: 0.5em;
 }
 
-
-
 #imagenPrincipal {
     padding-bottom: 4em;
 }
 
 #titulo2 {
-    size: 2em;
-    padding-bottom: 4em;
+    font-size: 40px;
 }
 
 @media (min-width: 1px) and (max-width: 991.98px) {
@@ -135,8 +152,21 @@ body::before {
 
 }
 
-
 /*Quienes somos*/
+
+#texto2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30PX;  
+    }
+
+.conteiner-text-center img {
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    }
 
 #quienesSomos {
     padding-top: 6em;
@@ -152,7 +182,7 @@ body::before {
     padding-bottom: 4em;
 }
 
-#imagen2 {
+imagen2 {
     width: 60%;
     display: block;
     margin-bottom: 4em;
@@ -173,8 +203,6 @@ p {
     font-family: "Montserrat", sans-serif;
 }
 
-
-
 /* Formulario */
 
 #formulario {
@@ -186,8 +214,6 @@ p {
     margin-top: 4rem;
     font-family: "Montserrat", sans-serif;
 }
-
-
 
 .form-group {
     margin: 0 auto 1.25rem auto;
@@ -235,7 +261,6 @@ select {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
-
 }
 
 @media (min-width: 1px) and (max-width: 991.98px) {
@@ -243,7 +268,6 @@ select {
         border-radius: 20px;
     }
 }
-
 
 /*Solicitar Servicio*/
 
@@ -266,7 +290,6 @@ select {
     }
 }
 
-
 .table th {
     border-style: none;
 }
@@ -278,10 +301,13 @@ select {
 .whatsapp {
     position: fixed;
     bottom: 30px;
-    right: 30px; }
-    .whatsapp img {
-      width: 80px;
-      height: 80px; }
+    right: 30px;
+}
+
+.whatsapp img {
+    width: 80px;
+    height: 80px;
+}
 
 /*Footer*/
 
@@ -354,6 +380,7 @@ li a {
 li a:hover {
     background-color: #212529;
 }
+
 .footer div {
     padding: 30px;
     margin: 20px;
@@ -361,6 +388,8 @@ li a:hover {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .footer div a img {
     width: 100px;
-    height: 100px; }
+    height: 100px;
+}
